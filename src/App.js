@@ -8,7 +8,7 @@ function App() {
   const handleGenerateProxy = () => {
     if (serverUrl.trim() === '') return
     // Assuming the proxy server is running on http://localhost:5000
-    const generatedUrl = `http://localhost:3001/proxy?url=${encodeURIComponent(serverUrl)}`
+    const generatedUrl = `https://middleman-api.onrender.com/proxy?url=${encodeURIComponent(serverUrl)}`
     setProxyUrl(generatedUrl)
   }
 
