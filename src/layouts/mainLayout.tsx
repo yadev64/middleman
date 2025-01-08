@@ -4,25 +4,22 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Outlet } from "react-router-dom";
 export function MainLayout() {
   return (
-    <>
-      <div className="flex flex-col min-h-screen w-full">
-        <header className="border-b h-14 flex items-center px-6">
-          <h1 className="text-xl font-semibold">My App</h1>
+      <>
+          
+          <header className="border-b h-14 flex items-center px-6">
+          <h1 className="text-xl font-semibold"> middleman</h1>
         </header>
+      <div className="flex flex-col min-h-screen w-full">
+        
 
         <div className="flex flex-1">
-                  <SidebarProvider>
-                      
-                      <SidebarComponent />
-                      <SidebarTrigger />
+          <SidebarProvider>
+            <SidebarComponent />
+            <SidebarTrigger />
             <main className="flex-1 p-6">
-                          <Outlet />
-                          
-          </main>
-              
-            
+              <Outlet />
+            </main>
           </SidebarProvider>
-          
         </div>
       </div>
     </>
